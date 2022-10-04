@@ -1,0 +1,56 @@
+.main-page {
+    flex-direction: column;
+}
+
+.hero {
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    background: var(--secondary-bg-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/order-section-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+            width: 696px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            color: var(--white-title-color);
+        }
+    &__button {
+        width: 216px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: var(--white-title-color);
+        background: var(--accent-color);
+        cursor: pointer;
+    
+        transition: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+                background-color: var(--color-dark-blue);
+        
+            }
+    }
+}

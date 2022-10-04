@@ -1,0 +1,44 @@
+.about-us {
+    display: block;
+    padding-top: 0;
+
+    &__title {
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-text-color);
+        }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    &__img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+    &__card {
+        position: relative;
+
+        &--title {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                bottom: 0;
+        
+                height: 70px;
+                width: 100%;
+                font-weight: 700;
+                line-height: 1.143;
+                text-transform: uppercase;
+                color: var(--primary-bg-color);
+                background-color: rgba(47, 48, 58, 0.8);
+            }
+    }
+}

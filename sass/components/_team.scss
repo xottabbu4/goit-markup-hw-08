@@ -1,0 +1,85 @@
+.team {
+    margin-bottom: 50px;
+    color: var(--buttons-bg-color);
+}
+
+.team {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+
+    &__section {
+            background-color: var(--buttons-bg-color);
+        }
+
+    &__list {
+            display: flex;
+            gap: 30px;
+
+            &--item {
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                        0px 2px 1px rgba(0, 0, 0, 0.2);
+                    border-radius: 0px 0px 4px 4px;
+            
+                    background-color: var(--white-title-color);
+                }
+        }
+    &__element--text-container {
+        padding: 30px 0;
+    }
+
+    &__member {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        margin-bottom: 10px;
+        text-align: center;
+        color: var(--primary-text-color);
+
+        &--title {
+                font-size: 16px;
+                line-height: 1.188;
+                text-align: center;
+                color: var(--secondary-text-color);
+            }
+        &--img {
+                    display: block;
+                }         
+    }
+    &__contact--list {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+        justify-content: center;
+    }
+    &__contact--item {
+        width: 44px;
+        height: 44px;
+    }
+    &__contact--image {
+        fill: currentColor;
+    }
+    &__contact--link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: var(--border-color-grey);
+            border-radius: 50%;
+    
+            transition: color, background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover, &:focus {
+                    color: var(--white-title-color);
+                    background-color: var(--accent-color);
+            
+                }
+    
+        }
+
+}
