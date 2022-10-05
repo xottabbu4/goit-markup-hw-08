@@ -1,0 +1,42 @@
+.container {
+    // Breakpoints
+    // 1. Mobile screen - 480px
+    // 2. Tablet screen - 768px
+    // 3. Desktop screen - 1200px
+
+    // Mobile screen
+    // width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    outline: 2px solid red;
+    // outline-offset: -2px;
+
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+
+    //  Tablet screen
+    @media screen and (min-width: 768px) {
+       width: 768px;
+    }
+
+    //  Desktop screen
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+// @media screen and (min-width: 480px) {
+    
+// }
+
+// @media screen and (min-width: 768px) {
+    
+// }
+
+// @media screen and (min-width: 1200px) {
+    
+// }
