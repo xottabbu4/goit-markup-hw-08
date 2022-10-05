@@ -1,8 +1,14 @@
 .filters-list {
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 8px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+     }
 }
 
 .filter-button-selected {
@@ -63,6 +69,7 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 
     &--title {
@@ -80,17 +87,44 @@
 }
 
 .portfolio__element {
-    width: 370px;
-    box-sizing: border-box;
+    width: 100%;
 
     transition: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 480px) {
+            width: 450px;}
+
+    @media screen and (min-width: 768px)  {
+            width: 354px;
+            margin-bottom: 0;}
+
+    @media screen and (min-width: 1200px) {
+            width: 370px;
+            margin: 0;}
+
+    
+
     &-image {
+
         display: block;
-        max-height: 100%;
+        width: 100%;
         text-decoration: none;
+
+        @media screen and (min-width: 480px) {
+            height: 294px;
+            width: 450px;
+         }
+
+        @media screen and (min-width: 768px) {
+        width: 354px; 
+         }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+         }
+
     }
 
 }
@@ -139,15 +173,31 @@
 
 
 .portfolio__desc {
+    
     position: absolute;
-    height: 168px;
-    width: 322px;
-    margin: 63px 24px;
+    margin: 35px 24px ;    
 
     color: var(--primary-bg-color);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 28px;
+
+    @media screen and (min-width: 480px) {
+        margin: 77px 24px;
+        font-size: 18px;
+     }
+
+
+    @media screen and (min-width: 768px) {
+    margin: 49px 24px 77px;
+     }
+
+
+
+    @media screen and (min-width: 1200px) {
+        margin: 63px 24px;
+    
+         }
 
 }
 
@@ -155,4 +205,8 @@
     padding: 20px 24px;
     border: 1px solid var(--border-color-2);
     border-top: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 20px 24px 56px;
+        }
 }

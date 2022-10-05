@@ -3,38 +3,61 @@
 }
 
 .hero {
-    padding: 200px 0;
+    
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
+    padding: 118px 0;
     margin: 0 auto;
     text-align: center;
-
     background: var(--secondary-bg-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/order-section-background.jpg");
+                rgba(47, 48, 58, 0.4)),
+            url("../images/order-section-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+    @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+        max-width: 768px;
+         }
+    
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        max-width: 1600px;
+        height: 600px;
+        }
+
     &__title {
-            width: 696px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto 30px;
+
+
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        
+        text-transform: uppercase;
+        color: var(--white-title-color);
+
+        @media screen and (min-width: 1200px) {
+            max-width: 696px;
             font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
-            letter-spacing: 0.06em;
-            color: var(--white-title-color);
+
+               }    
         }
+
     &__button {
-        width: 216px;
+
+        width: 200px;
         height: 50px;
         font-weight: 700;
-        font-size: 16px;
         line-height: 1.875;
+        font-size: 16px;
         letter-spacing: 0.06em;
         text-decoration: none;
         border: none;
@@ -43,10 +66,13 @@
         color: var(--white-title-color);
         background: var(--accent-color);
         cursor: pointer;
-    
+        
         transition: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 1200px) {
+            width: 216px; }
 
         &:hover {
                 background-color: var(--color-dark-blue);

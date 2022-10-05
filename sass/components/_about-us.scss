@@ -1,4 +1,8 @@
 .about-us {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+    
     display: block;
     padding-top: 0;
 
@@ -41,4 +45,5 @@
                 background-color: rgba(47, 48, 58, 0.8);
             }
     }
+}
 }

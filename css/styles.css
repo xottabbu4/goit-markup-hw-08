@@ -547,11 +547,6 @@ background-color: var(--color-dark-blue);
   margin-top: 50px;
 }
 
-.team {
-  margin-bottom: 50px;
-  color: var(--buttons-bg-color);
-}
-
 .team,
 .clients__sign {
   font-size: 36px;
