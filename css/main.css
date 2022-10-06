@@ -1326,6 +1326,11 @@ p {
   right: 15px;
 }
 
+.js-close-menu .menu-icon:hover,
+.js-close-menu .menu-icon:focus {
+  fill: var(--accent-color);
+}
+
 .menu-container {
   position: fixed;
   top: 0;
