@@ -825,7 +825,7 @@ background-color: var(--color-dark-blue);
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
 }
-.logo--light {
+.--light {
   width: 145px;
   height: 31px;
   font-family: "Raleway";
