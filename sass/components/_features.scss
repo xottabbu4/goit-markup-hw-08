@@ -1,8 +1,16 @@
 .feature__list {
 
+    // @media screen and (min-width: 768px) {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         gap: 30px;
+    //         justify-content: center;
+    //     }
+
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;
         gap: 30px;
     }
@@ -72,6 +80,10 @@
     line-height: 1.143;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .feature__text {

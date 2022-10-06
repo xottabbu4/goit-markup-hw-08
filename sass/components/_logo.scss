@@ -62,13 +62,6 @@
     color: var(--black-color);
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-        margin-right: 87px;
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
-
-
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         padding-top: 24px;
